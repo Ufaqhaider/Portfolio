@@ -37,9 +37,9 @@ export default function
           </a>
           <div className='socials'>
             <ul>
-              <li><a href="#"><i class="fa-brands fa-instagram instagram"></i></a></li>
-              <li><a href='#'><i class="fa-brands fa-linkedin"></i></a></li>
-              <li><a href='#'><i class="fa-brands fa-youtube"></i></a></li>            
+              <li><a href="https://instagram.com/trynna_be_myself?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram instagram"></i></a></li>
+              <li><a href='https://www.linkedin.com/in/ufaq-haider-1658061a5'><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href='https://youtube.com/@trynnabemyself930'><i class="fa-brands fa-youtube"></i></a></li>            
             </ul>
           </div>
           </div>
