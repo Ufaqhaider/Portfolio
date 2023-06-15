@@ -13,9 +13,6 @@ export default function Hamburger({bar,Setbar}) {
             <li>
                 <a href='#works'>Skills</a>
             </li>
-            <li>
-                <a href='#Contact'>Contact</a>
-            </li>
         </ul>
     </div>
   )
