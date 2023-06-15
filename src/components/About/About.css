@@ -2,8 +2,14 @@
 .about{
     text-align: center;
     padding-top: 100px;
-    background-color: rgb(255, 255, 255);
     height: 100vh ;
     background-image: url('./about.gif');
     background-size: cover;
+}
+
+@media screen and (max-width: 1128px) {
+    .about{
+        padding: 50px 30px;
+
+    }
 }

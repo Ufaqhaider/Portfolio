@@ -48,8 +48,7 @@ li a{
     padding: 12px;
     font-size: 20px;
     text-align: center; 
-    justify-conte        Pricing
-    nt: space-between;
+    justify-content: space-between;
 }
 .nav-links ul li button{
     font-size: 25px;
@@ -71,6 +70,7 @@ li a{
     letter-spacing: 3px;
 
 }
+
 
 .intro button{
     font-size: 20px;
@@ -232,7 +232,6 @@ li a{
     }
 }
     
-}
 
 
 

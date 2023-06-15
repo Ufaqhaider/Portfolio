@@ -1,22 +1,58 @@
-export default function Menu({bar,Setbar}) {
+import { Link, animateScroll as scroll } from "react-scroll";
+
+export default function Menu({bar,Setbar,click}) {
   return (
     <div  className='main-bar'>
         <ul>
             <li>
-                <a href='#intro'>Home</a>
+                	
+                <Link
+                    to="intro"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                ><a onClick={click}>Home</a></Link>
             </li>
             <li>
-                <a href='#about'>About</a>
+            <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={500}
+                >About</Link>
             </li>
             <li>
-                <a href='#portfolio'>Portfolio</a>
+            <Link
+                    activeClass="active"
+                    to="portfolio"
+                    spy={true}
+                    smooth={true}
+                    offset={40}
+                    duration={500}
+                >Projects</Link>
             </li>
             <li>
-                <a href='#works'>Works</a>
+            <Link
+                    activeClass="active"
+                    to="works"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={500}
+                >Skills</Link>
             </li>
 
             <li>
-                <a href='#contact'>Contact</a>
+            <Link
+                    activeClass="active"
+                    to="Contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Contact</Link>
             </li>
         </ul>
     </div>

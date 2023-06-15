@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import monkey from '../assets/pngkey.com-funny-monkey-png-9148666.png'
+import Rocket from '../assets/rocket-front-color.png'
 import Menu from './Menu';
+import { Link } from 'react-scroll';
 
 export default function Topbar(props) {
-  const [showCat, setShowCat] = useState(false);
+  const [showRocket, setRocket] = useState(false);
   const handleClick = () => {
-    setShowCat(true);
+    setRocket(true);
     setTimeout(() => {
-      setShowCat(false);
+      setRocket(false);
     }, 2000); // Adjust the duration as needed
   };
 
@@ -16,14 +17,24 @@ export default function Topbar(props) {
     <div className='topbar' id='topbar'>
       <div className='wrapper'>
       <div className='left'> 
-        <a href='#intro' onClick={handleClick}>Ufaq</a>
+        <Link
+          to="intro"
+          smooth={true}
+          offset={10}
+          duration={500}
+          >
+            <a onClick={handleClick}>Ufaq</a>
+        </Link>
+        {/* <Link
+                    to="intro"
+                    offset={10}
+                ><a onClick={handleClick}>Home</a>
+        </Link> */}
       </div>
       <div className='right'>
-        <Menu/>
-
-
+        <Menu click={handleClick}/>
         <div className='menu-icon'>
-          <a href='#intro' onClick={()=>props.Setbar(!props.bar)}>
+          <a onClick={()=>props.Setbar(!props.bar)}>
             {props.bar ? <i class="fa-solid fa-bars fa-2x" ></i> : <i class="fa-solid fa-xmark fa-2x"></i>}
           </a>
         </div>
@@ -35,8 +46,8 @@ export default function Topbar(props) {
 
 
 
-      {showCat && (
-        <img className="monkey" src={monkey} alt="Cat" />
+      {showRocket && (
+        <img className="monkey" src={Rocket} alt="rocket" />
       )}
     </div>
   )

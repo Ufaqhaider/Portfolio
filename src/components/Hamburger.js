@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function Hamburger({bar,Setbar}) {
   return (
@@ -8,13 +8,13 @@ export default function Hamburger({bar,Setbar}) {
                 <a href='#intro'>Home</a>
             </li>
             <li>
-                <a href='#portfolio'>Portfolio</a>
+                <a href='#portfolio'>Projects</a>
             </li>
             <li>
-                <a href='#works'>Works</a>
+                <a href='#works'>Skills</a>
             </li>
             <li>
-                <a href='#contact'>Contact</a>
+                <a href='#Contact'>Contact</a>
             </li>
         </ul>
     </div>

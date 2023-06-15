@@ -46,6 +46,7 @@
     align-items: center;
     width:100%;
     justify-content: space-between;
+    overflow-y: hidden;
 }
 
 .left a {
@@ -81,7 +82,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 873px) {
 .active{
     width: 300px;
     height: 100vh;
@@ -176,8 +177,3 @@ li a {
 
 
 
-/* Contact */
-.Contact{
-    background-color: aqua;
-    height: 100vh ;
-}

@@ -38,7 +38,7 @@ const Icon=[
     {
         id:'1',
         img:'assets/vscode.png',
-        name:'Firebase'
+        name:'VS Code'
     },
     {
         id:'1',
