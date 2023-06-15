@@ -6,7 +6,6 @@ import Works from './components/works/Works'
 import Portfolio from './components/Portfolio/portfolio'
 import Contact from './components/Contact/Contact'
 import Hamburger from './components/Hamburger'
-import Cont1 from './components/cont1/cont1';
 
 export default function App() {
   const [bar,Setbar]=useState(true)
@@ -21,7 +20,6 @@ export default function App() {
         <Portfolio/>
         <Contact/>
         <Works/>
-        <Cont1/>
 
 
       </div>
